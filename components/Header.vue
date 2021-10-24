@@ -1,21 +1,21 @@
 <template>
   <menu class="main-menu">
     <div class="main-menu__top">
-      <a class="logo" rel="home" href="https://jacekjeznach.com">
+      <a class="logo" rel="home" href="#">
         <span>AssaByn</span>
       </a>
 
     </div>
     <nav class="main-menu_nav">
-      <a rel="about" href="https://jacekjeznach.com/about/">About</a>
-      <a rel="skills" href="https://jacekjeznach.com/skills/">My Skills</a>
-      <a rel="work" href="https://jacekjeznach.com/portfolio/">Work</a>
-      <a rel="blog" href="https://jacekjeznach.com/wall/">Blog</a>
-      <a rel="contact" href="https://jacekjeznach.com/contact/">Contact</a>
+      <a rel="about" href="">About</a>
+      <a rel="skills" href="">My Skills</a>
+      <a rel="work" href="">Work</a>
+      <a rel="blog" href="">Blog</a>
+      <a rel="contact" href="">Contact</a>
     </nav>
     <ul class="social">
       <li>
-        <a href="https://twitter.com/JeznachJacek" target="_blank">
+        <a href="https://twitter.com/assabyn" target="_blank">
           <svg
             aria-hidden="true"
             focusable="false"
@@ -36,7 +36,7 @@
       </li>
       <li>
         <a
-          href="https://pl.linkedin.com/pub/jacek-jeznach/40/9b6/a9"
+          href="https://pl.linkedin.com/"
           target="_blank"
         >
           <svg
@@ -59,7 +59,7 @@
       </li>
       <li>
         <a
-          href="https://www.facebook.com/pages/JJ-Front-End-Web-Developer/1065969103428564"
+          href="https://www.facebook.com/"
           target="_blank"
         >
           <svg
@@ -81,7 +81,7 @@
         </a>
       </li>
       <li>
-        <a href="https://jacekjeznach.com/feed/" target="_blank">
+        <a href="contact" target="_blank">
           <svg
             aria-hidden="true"
             focusable="false"
