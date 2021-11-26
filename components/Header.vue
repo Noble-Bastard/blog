@@ -6,11 +6,11 @@
       </a>
     </div>
     <nav class="main-menu_nav">
-      <a rel="about" href="/about">About</a>
-      <a rel="skills" href="/skills">My Skills</a>
-      <a rel="work" href="/portfolio">Portfolio</a>
-      <a rel="blog" href="blog">Blog</a>
-      <a rel="contact" href="/contact">Contact</a>
+      <NuxtLink to="/about">About</NuxtLink>
+      <NuxtLink to="/skills">My Skills</NuxtLink>
+      <NuxtLink to="/portfolio">Portfolio</NuxtLink>
+      <NuxtLink to="/blog">Blog</NuxtLink>
+      <NuxtLink to="/contact">Contact</NuxtLink>
     </nav>
     <ul class="social">
       <li>
