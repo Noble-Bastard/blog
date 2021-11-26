@@ -164,17 +164,6 @@ canvas {
   font-size: 1rem;
   color: white;
 }
-/* .skills {
- 
-  display: flex;
-  flex-direction: column;
-
-  left: 20%;
-  transform: translateX(-50%);
-  transform: translateY(15%); */
-/* margin-top: 12rem;
-  padding-left: 37rem;
-} */
 .skill {
   display: flex;
   align-items: center;

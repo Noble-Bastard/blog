@@ -1,44 +1,133 @@
 <template>
-  <div class="portfolio">
-    <header>
-      <h1 class="glow">
-        <span>S</span><span>O</span><span>O</span><span>N</span><span>.</span
-        ><span>.</span><span>.</span>
-      </h1>
-    </header>
+  <div>
+    <div class="projects">
+      <div class="project-article">
+        <div class="project-content">
+          <div class="project-image">
+            <img
+              src="../../assets/project.jpg"
+              alt=""
+              width="90px"
+              height="90px"
+            />
+          </div>
+          <div class="project-text">
+            <div class="project-title">
+              <a :href="'/project/' + postId"> {{ postTitle }} 1 </a>
+            </div>
+            <div class="project-mini-info">
+              {{ postMiniInfo }}
+            </div>
+            <a :href="'/project/' + postId" class="read-more">Read more...</a>
+          </div>
+        </div>
+      </div>
+      <div class="project-article">
+        <div class="project-content">
+          <div class="project-image">
+            <img
+              src="../../assets/project.jpg"
+              alt=""
+              width="90px"
+              height="90px"
+            />
+          </div>
+          <div class="project-text">
+            <div class="project-title">
+              <a :href="'/project/' + postId"> {{ postTitle }} 1 </a>
+            </div>
+            <div class="project-mini-info">
+              {{ postMiniInfo }}
+            </div>
+            <a :href="'/project/' + postId" class="read-more">Read more...</a>
+          </div>
+        </div>
+      </div>
+      <div class="project-article">
+        <div class="project-content">
+          <div class="project-image">
+            <img
+              src="../../assets/project.jpg"
+              alt=""
+              width="90px"
+              height="90px"
+            />
+          </div>
+          <div class="project-text">
+            <div class="project-title">
+              <a :href="'/project/' + postId"> {{ postTitle }} 1 </a>
+            </div>
+            <div class="project-mini-info">
+              {{ postMiniInfo }}
+            </div>
+            <a :href="'/project/' + postId" class="read-more">Read more...</a>
+          </div>
+        </div>
+      </div>
+    </div>
     <canvas></canvas>
   </div>
 </template>
 
 <script>
-export default {};
+export default {
+  name: "blog",
+  data() {
+    return {
+      postTitle: "Lorem ipsum",
+      postId: "1",
+      postImg: "../../assets/project.jpg",
+      postMiniInfo: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    };
+  },
+};
 </script>
 
 <style>
-canvas {
-  width: 100%;
-  height: 100%;
-}
-header {
+.projects {
   position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  padding-top: 13rem;
+}
+canvas {
+  height: 100%;
+  width: 100%;
 }
 
-header h1 {
-  color: white;
-  font-size: 10rem;
-  letter-spacing: 1rem;
-  /* text-shadow: 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff; */
+.project-article {
+  color: #f1dcff;
+  margin-left: 18rem;
+  margin-top: 2rem;
+  display: flex;
+  width: 800px;
+  height: 140px;
+  background: #202020;
+  opacity: 0.8;
+  filter: alpha(Opacity=80);
+  font-size: 1.2rem;
 }
 
-.glow span {
-  transition: all 0.3s;
+.project-content {
+  margin-top: 1rem;
+  margin-left: 1rem;
+  display: flex;
+}
+.project-image {
+  margin-top: 0.7rem;
+  margin-left: 1rem
+}
+.project-text {
+  margin-top: 0.4rem;
+  margin-left: 2rem
+}
+.project-mini-info {
+  font-size: 1rem;
+  color: #909096;
+  margin-bottom: 0.5rem;
+}
+.read-more {
+  font-size: 1rem;
 }
 
-.glow span:hover {
-  text-shadow: 0 0 10px #06f9fb, 0 0 30px #06f9fb, 0 0 80px #06f9fb;
-  color: #fff;
+a {
+  color: #f1dcff;
 }
 </style>
