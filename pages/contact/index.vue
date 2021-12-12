@@ -229,5 +229,10 @@ canvas {
   transition: fill 0.3s;
   fill: #909096;
   margin-right: 1px;
-} 
+}
+@media screen and (max-width: 1200px) {
+  .contacts {
+    margin-left: -15rem;
+  }
+}
 </style>

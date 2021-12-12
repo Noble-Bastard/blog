@@ -1,75 +1,38 @@
 <template>
   <div>
     <div class="posts">
-    <div class="post-article">
-      <div class="post-content">
-        <div class="blog-post-title">
-            <a :href="'/blog/' + postId">
-              {{postTitle}}
-            </a>
+      <div class="post-article" v-for="(post, index) in posts" :key="index">
+        <div class="post-content">
+          <div class="blog-post-title">
+            <NuxtLink :to="`/blog/${post.id}`">{{ post.postTitle }}</NuxtLink>
+          </div>
+          <time class="post-date"> {{ postDate }}</time>
+          <div class="blog-post-content">
+            {{ post.postMiniInfo }}
+          </div>
+          <NuxtLink :to="`/blog/${post.id}`" class="read-more">Read more...</NuxtLink>
         </div>
-        <time class="post-date"> {{postDate}}</time>
-        <div class="blog-post-content">
-          {{postMiniInfo}}
-        </div>
-        <a
-          :href="'/blog/' + postId"
-          class="read-more"
-          >Read more...</a
-        >
       </div>
-    </div>
-    <div class="post-article">
-      <div class="post-content">
-        <div class="blog-post-title">
-            <a :href="'/blog/' + postId">
-              {{postTitle}}
-            </a>
-        </div>
-        <time class="post-date"> {{postDate}}</time>
-        <div class="blog-post-content">
-          {{postMiniInfo}}
-        </div>
-        <a
-          :href="'/blog/' + postId"
-          class="read-more"
-          >Read more...</a
-        >
-      </div>
-    </div>
-    <div class="post-article">
-      <div class="post-content">
-        <div class="blog-post-title">
-            <a :href="'/blog/' + postId">
-              {{postTitle}}
-            </a>
-        </div>
-        <time class="post-date"> {{postDate}}</time>
-        <div class="blog-post-content">
-          {{postMiniInfo}}
-        </div>
-        <a
-          :href="'/blog/' + postId"
-          class="read-more"
-          >Read more...</a
-        >
-      </div>
-    </div>
     </div>
     <canvas></canvas>
   </div>
 </template>
 
 <script>
+import axios from "axios";
+
 export default {
   name: "blog",
   data() {
     return {
-      postTitle: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-      postId: '1',
-      postDate: 'April 23',
-      postMiniInfo: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam accumsan felis id quam fringilla varius. Ut eget nibh scelerisque odio pharetra rutrum in ut neque.'
+      posts: [],
+      postDate: "April 23"
     };
+  },
+  mounted() {
+    axios
+      .get("http://0.0.0.0:5000/blog/list")
+      .then((response) => (this.posts = response.data));
   }
 };
 </script>
@@ -87,19 +50,20 @@ canvas {
   color: #f1dcff;
   margin-left: 18rem;
   margin-top: 2rem;
-  position: relative;
-  display: flex;
-  align-items: flex-start;
+  /* display: flex; */
+  /* align-items: flex-start; */
   width: 1000px;
-  height: 180px;
+  height: 160px;
   background: #202020;
   opacity: 0.8;
   filter: alpha(Opacity=80);
   font-size: 1.2rem;
 }
-
+.blog-post-title {
+  font-size: 1.3rem;
+}
 .post-content {
-  margin-top: 0.5rem;
+  padding-top: 1rem;
   margin-left: 1rem;
 }
 
@@ -123,5 +87,4 @@ canvas {
 a {
   color: #f1dcff;
 }
-
 </style>

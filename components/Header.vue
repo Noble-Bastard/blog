@@ -6,11 +6,11 @@
       </a>
     </div>
     <nav class="main-menu_nav">
-      <NuxtLink to="/about">About</NuxtLink>
-      <NuxtLink to="/skills">My Skills</NuxtLink>
-      <NuxtLink to="/portfolio">Portfolio</NuxtLink>
-      <NuxtLink to="/blog">Blog</NuxtLink>
-      <NuxtLink to="/contact">Contact</NuxtLink>
+      <a href="/about">About</a>
+      <a href="/skills">My Skills</a>
+      <a href="/portfolio">Portfolio</a>
+      <a href="/blog">Blog</a>
+      <a href="/contact">Contact</a>
     </nav>
     <ul class="social">
       <li>
@@ -165,6 +165,7 @@ export default {
 
 .main-menu__top > span {
   font-family: "Open Sans";
+  src: url(../assets/OpenSans-VariableFont_wdth,wght.ttf);
   color: #a5a5a5;
   font-size: 1.2rem;
   margin-top: 1rem;
@@ -219,6 +220,7 @@ svg {
 }
 .logo span {
   font-family: "WindsorC";
+  src: url(../assets/WindsorC.ttf);
   color: #e6e6fa;
   margin-top: 0.4px;
   font-size: 3rem;

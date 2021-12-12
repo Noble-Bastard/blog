@@ -207,4 +207,12 @@ footer {
   fill: #909096;
   margin-right: 1px;
 }
+@media screen and (max-width: 1200px) {
+  .skill {
+    width: 400px;
+  }
+  .experiance {
+  margin-left: 3rem;
+}
+}
 </style>

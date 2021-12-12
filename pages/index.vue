@@ -27,8 +27,7 @@
 </template>
 
 <script>
-export default {
-};
+export default {};
 </script>
 
 <style>
@@ -101,15 +100,15 @@ p {
 }
 @keyframes ava-animate {
   0% {
-    border-radius: 52% 48% 46% 54% / 50% 50% 50% 50% ;
+    border-radius: 52% 48% 46% 54% / 50% 50% 50% 50%;
   }
 
   30% {
-    border-radius: 51% 49% 50% 50% / 28% 50% 50% 72%  ;
+    border-radius: 51% 49% 50% 50% / 28% 50% 50% 72%;
   }
 
   60% {
-    border-radius: 51% 49% 50% 50% / 50% 24% 76% 50% ;
+    border-radius: 51% 49% 50% 50% / 50% 24% 76% 50%;
   }
 
   100% {
@@ -124,6 +123,11 @@ p {
 
   to {
     backdrop-filter: hue-rotate(90deg);
+  }
+}
+@media screen and (max-width: 1200px) {
+  .hero {
+    padding-left: 5rem;
   }
 }
 </style>

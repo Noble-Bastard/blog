@@ -58,7 +58,7 @@ export default {
   padding: 0;
 }
 canvas {
-  height: 100%;
+  height: 70rem;
   width: 100%;
 }
 .section-home {
@@ -93,5 +93,16 @@ canvas {
   letter-spacing: 0.3rem;
   color: #fff;
   border-left: 5px solid #202020;
+}
+@media screen and (max-width: 1200px) {
+  .timedate {
+  font: "Dejavu Sans";
+  margin-left: 3rem;
+  padding-left: 1rem;
+  font-size: 2rem;
+  letter-spacing: 0.3rem;
+  color: #fff;
+  border-left: 5px solid #202020;
+}
 }
 </style>

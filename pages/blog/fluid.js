@@ -25,7 +25,7 @@ SOFTWARE.
 
 const canvas = document.getElementsByTagName('canvas')[0];
 resizeCanvas();
-
+console.log("hello mazafaka")
 let config = {
     SIM_RESOLUTION: 128,
     DYE_RESOLUTION: 1024,
