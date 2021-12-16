@@ -31,7 +31,7 @@ export default {
   },
   mounted() {
     axios
-      .get("http://0.0.0.0:5000/blog/list")
+      .get("http://assabyn.xyz:5000/blog/list")
       .then((response) => (this.posts = response.data));
   }
 };
